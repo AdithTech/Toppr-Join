@@ -76,14 +76,15 @@ Ongoing class details:
                         wb_path = f"{settings['browser_path']} %s"
                         # from Greeting import greet
                         # greet(
-                        send_message(
-                            subject_name=subject_text,
-                            date=date_text,
-                            start_time=start_time__text,
-                            end_time=end_time__text,
-                            lecturer_name=lecturer_text,
-                            webhook_url=settings["discord_webhook_url"],
-                        )
+                        if settings["discord_webhook_url"]:
+                            send_message(
+                                subject_name=subject_text,
+                                date=date_text,
+                                start_time=start_time__text,
+                                end_time=end_time__text,
+                                lecturer_name=lecturer_text,
+                                webhook_url=settings["discord_webhook_url"],
+                            )
                         webbrowser.get(wb_path).open(
                             _class_["streaming_url"] + "&use_bot=true"
                         )

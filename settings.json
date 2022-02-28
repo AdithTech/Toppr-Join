@@ -4,5 +4,6 @@
   "browser_path": "<path_to_browser>",
   "ignored_classes": ["French Iii Lecture"],
   "alertByVoice": false,
-  "discord_webhook_url": "<your_discord_webhook_url>"
+  "discord_webhook_url": "<your_discord_webhook_url>",
+  "school_domain": "ryangroup.toppr.school"
 }

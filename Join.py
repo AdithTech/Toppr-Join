@@ -6,7 +6,7 @@ from discord_bot import send_message
 from toppr import Toppr
 
 settings = json.loads(open("settings.json", "r").read())
-tpr = Toppr("ryangroup.toppr.school")
+tpr = Toppr(settings['school_domain'])
 
 if tpr.login(settings["enrollment"], settings["password"]):
     print("Successfully logged in")

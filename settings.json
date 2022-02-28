@@ -1,7 +1,7 @@
 {
   "enrollment": "<your_enrollment> (int)",
   "password": "<your_password>",
-  "browser_path": "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe",
+  "browser_path": "<path_to_browser>",
   "ignored_classes": ["French Iii Lecture"],
   "alertByVoice": false,
   "discord_webhook_url": "<your_discord_webhook_url>"
